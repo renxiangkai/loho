@@ -39,8 +39,35 @@
         left: 0;
         background: #ffffff;
         width: 100%;
+        z-index: 99;
+        line-height: 0.6rem;
+        display: flex;
+        .left{
+            width:1.2rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            font-size:  0.2rem;
+            text-align: center; 
+            color: #5a5a5a;
+        }
         .center{
-            
+            text-align: center;
+            line-height: 0.6rem;
+            flex: 1;
+            color: #5a5a5a;
+            font-size:  0.3rem;
+            color: black;
+        }
+        .right{
+            width: 1.2rem;
+            li{
+                line-height: 0.6rem;
+                text-align: center;
+                font-size: 0.25rem;
+                width: 0.6rem;
+                float: left;
+                color: #5a5a5a;
+            }
         }
     }
 </style>

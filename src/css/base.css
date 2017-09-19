@@ -3,7 +3,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     padding:0;
 }
 body,button,input,select,textarea {
-    font:12px \5b8b\4f53,arial,sans-serif;
+    font:0.16rem \5b8b\4f53,arial,sans-serif;
 }
 table {
     border-collapse:collapse;
