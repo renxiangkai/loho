@@ -2,16 +2,16 @@
     <div class="index">
         <!-- <div class="header">
 
-                <div class="header-dingwei">
-                    北京
-                    <span class="iconfont icon-xiangxia"></span>
-                </div>
-                <div class="logo">loho</div>
-                <div class="header-right">
-                    <span class="iconfont icon-shopcar"></span>
-                    <span class="iconfont icon-wode"></span>
-                </div>
-            </div> -->
+                    <div class="header-dingwei">
+                        北京
+                        <span class="iconfont icon-xiangxia"></span>
+                    </div>
+                    <div class="logo">loho</div>
+                    <div class="header-right">
+                        <span class="iconfont icon-shopcar"></span>
+                        <span class="iconfont icon-wode"></span>
+                    </div>
+                </div> -->
         <v-header title="首页">
             <div class="header-dingwei" slot='left'>
                 <router-link to="/position">
@@ -64,7 +64,7 @@
                                 <p v-html="ele.tag_en"></p>
                                 <img :src="ele.pic" alt="">
                             </router-link>
-                            
+
                         </li>
 
                     </ul>
@@ -86,11 +86,11 @@
                     <ul class="list-ul">
                         <li v-for="(ele,index) in ele.show">
 
-                        <router-link :to='"/detail/"+ele.gid'>
-                            <p v-html="ele.tag"></p>
-                            <p v-html="ele.tag_en"></p>
-                            <img :src="ele.pic" alt="">
-                        </router-link>
+                            <router-link :to='"/detail/"+ele.gid'>
+                                <p v-html="ele.tag"></p>
+                                <p v-html="ele.tag_en"></p>
+                                <img :src="ele.pic" alt="">
+                            </router-link>
 
                         </li>
 
@@ -103,7 +103,7 @@
                     <span class="iconfont icon-xiangxia"></span>
                 </h2>
             </div>
-            <ul class="content-more clr"  v-show="flag">
+            <ul class="content-more clr" v-show="flag">
                 <li v-for="(ele,index) in listMore">
                     <router-link :to='"/detail/"+ele.gid'>
                         <img :src="'http://image.loho88.com/'+ele.img" alt="">
@@ -111,7 +111,7 @@
                         <p class="list-more-price">￥{{ele.price}}</p>
                     </router-link>
                 </li>
-                
+
             </ul>
             <div class="content-add" v-show="flag" @click="addMore">
                 {{tishi}}
@@ -171,7 +171,7 @@ export default {
                 this.listMore = this.listMore.concat(res.data.result.data)
 
             })
-           
+
         },
         gobackTop() {
             console.log("111")
@@ -188,7 +188,7 @@ export default {
             this.listData = res.data.result.classify
             this.popular = res.data.result.popular
         });
-     
+
 
     },
     updated() {
@@ -209,7 +209,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 .index {
     width: 100%;
     background: #f2f2f2;
@@ -242,28 +242,8 @@ export default {
                     font-size: 0.3rem;
                 }
             }
-        }
-    } // .logo {
-    //     width: 0.64rem;
-    //     height: 100%;
-    //     float: left;
-    //     text-align: center;
-    //     margin-left: 0.38rem;
-    //     line-height: 0.45rem;
-    // }
-    // .header-right {
-    //     width: 1.2rem;
-    //     height: 100%;
-    //     float: right;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     span {
-    //         display: inline-block;
-    //         width: 0.6rem;
-    //         font-size: 0.3rem;
-    //     }
-    // }
+        } 
+    }
 
 
 .content {
