@@ -209,7 +209,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="sass" scoped>
 .index {
     width: 100%;
     background: #f2f2f2;
