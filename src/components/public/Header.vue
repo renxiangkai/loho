@@ -55,13 +55,14 @@
             line-height: 0.6rem;
             flex: 1;
             color: #5a5a5a;
-            font-size:  0.3rem;
+            font-size:  0.2rem;
             color: black;
         }
         .right{
             width: 1.2rem;
             li{
                 line-height: 0.6rem;
+                height:0.6rem;
                 text-align: center;
                 font-size: 0.25rem;
                 width: 0.6rem;

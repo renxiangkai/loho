@@ -9,6 +9,16 @@ import axios from "axios"
 // 给 vue扩展 全局使用的插件
 Vue.prototype.$http = axios
 
+//mint-ui
+import { Button, Cell ,Swipe, SwipeItem ,Lazyload ,Loadmore} from 'mint-ui'
+
+Vue.component(Button.name, Button)
+Vue.component(Cell.name, Cell)
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
+Vue.component(Loadmore.name, Loadmore);
+Vue.use(Lazyload);
+
 //引入store
 import store from "./store"
 
