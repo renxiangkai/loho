@@ -156,7 +156,8 @@ export default {
             page: 1,
             listMore: [],
             tishi: "加载更多数据",
-            goback: false
+            goback: false,
+            data: []
         }
     },
     methods: {
